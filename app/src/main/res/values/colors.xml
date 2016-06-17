@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7cb342</color>
+    <color name="colorPrimaryDark">#33691e</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="list_item_title">#33691e</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="background_chat_other">#ffffff</color>
+    <color name="background_chat_me">#7cb342</color>
+
+</resources>

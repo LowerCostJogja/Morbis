@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/update_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/morbis"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/signout"
+                    android:src="@drawable/sigout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/info_rekmed"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_category"
+            android:padding="20dp"
+            android:src="@drawable/bloodpreasure"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi rekam medis"
+            android:layout_toRightOf="@id/img_category"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info_kondisi"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_kondisi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="20dp"
+            android:src="@drawable/heartbeat"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kondisi terkini"
+            android:layout_toRightOf="@id/img_kondisi"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info_pmi"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_pmi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bloodicon"
+            android:padding="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi PMI terdekat"
+            android:layout_toRightOf="@id/img_pmi"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info_tempat_kes"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_kes"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/map"
+            android:padding="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi tempat kesehatan"
+            android:layout_toRightOf="@id/img_kes"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
